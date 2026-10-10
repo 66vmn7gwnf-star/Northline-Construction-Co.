@@ -1645,6 +1645,460 @@ button {
 
 }
 
+/* ================================
+   REQUEST AN ESTIMATE
+================================= */
+
+.estimate {
+
+    background: var(--charcoal);
+
+    color: var(--white);
+
+    border-top: 1px solid #303438;
+
+}
+
+
+.estimate__heading {
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: end;
+
+    gap: 80px;
+
+    margin-bottom: 70px;
+
+}
+
+.estimate__heading .eyebrow {
+
+    color: var(--orange);
+
+}
+
+
+.estimate__heading h2 {
+
+    max-width: 760px;
+
+    font-size: clamp(3rem, 6vw, 5.5rem);
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+
+}
+
+
+.estimate__heading h2 span {
+
+    display: block;
+
+    color: var(--orange);
+
+}
+
+
+.estimate__heading > p {
+
+    max-width: 430px;
+
+    color: #BFC3C6;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================================
+   ESTIMATE LAYOUT
+================================= */
+
+.estimate__layout {
+
+    display: grid;
+
+    grid-template-columns: 0.75fr 1.25fr;
+
+    gap: 80px;
+
+}
+
+
+/* ================================
+   ESTIMATE INFORMATION
+================================= */
+
+.estimate__info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+
+.estimate__intro > span {
+
+    color: var(--orange);
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.estimate__intro h3 {
+
+    max-width: 400px;
+
+    margin-top: 25px;
+
+    font-size: 2rem;
+
+    line-height: 1.1;
+
+}
+
+
+.estimate__intro p {
+
+    max-width: 400px;
+
+    margin-top: 20px;
+
+    color: #AEB3B7;
+
+    line-height: 1.8;
+
+}
+
+
+.estimate__details {
+
+    margin-top: 60px;
+
+}
+
+
+.estimate__detail {
+
+    padding: 22px 0;
+
+    border-top: 1px solid #303438;
+
+}
+
+
+.estimate__detail:last-child {
+
+    border-bottom: 1px solid #303438;
+
+}
+
+
+.estimate__detail > span {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #777D82;
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.estimate__detail a {
+
+    color: var(--white);
+
+    font-size: 1rem;
+
+}
+
+
+.estimate__detail a:hover {
+
+    color: var(--orange);
+
+}
+
+
+.estimate__detail p {
+
+    color: #D0D3D5;
+
+    line-height: 1.6;
+
+}
+
+
+/* ================================
+   ESTIMATE FORM
+================================= */
+
+.estimate__form-wrapper {
+
+    background: #1A1D20;
+
+    border: 1px solid #303438;
+
+    padding: 45px;
+
+}
+
+
+.estimate-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+
+.estimate-form__row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.estimate-form__field {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.estimate-form__field label {
+
+    margin-bottom: 10px;
+
+    color: #D9DCDD;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.estimate-form__field input,
+.estimate-form__field select,
+.estimate-form__field textarea {
+
+    width: 100%;
+
+    border: 1px solid #3A3E42;
+
+    background: #131619;
+
+    color: var(--white);
+
+    padding: 15px 16px;
+
+    font-family: inherit;
+
+    font-size: 0.9rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease;
+
+}
+
+
+.estimate-form__field input::placeholder,
+.estimate-form__field textarea::placeholder {
+
+    color: #6F757A;
+
+}
+
+
+.estimate-form__field input:focus,
+.estimate-form__field select:focus,
+.estimate-form__field textarea:focus {
+
+    border-color: var(--orange);
+
+    background: #171A1D;
+
+}
+
+
+.estimate-form__field textarea {
+
+    min-height: 150px;
+
+    resize: vertical;
+
+}
+
+
+.estimate-form__field select {
+
+    appearance: auto;
+
+    cursor: pointer;
+
+}
+
+
+/* ================================
+   SUBMIT BUTTON
+================================= */
+
+.estimate-form__submit {
+
+    width: 100%;
+
+    border: none;
+
+    background: var(--orange);
+
+    color: var(--white);
+
+    padding: 19px 25px;
+
+    font-family: inherit;
+
+    font-size: 0.9rem;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+.estimate-form__submit span {
+
+    margin-left: 8px;
+
+}
+
+
+.estimate-form__submit:hover {
+
+    background: #FF8A32;
+
+    transform: translateY(-2px);
+
+}
+
+
+.estimate-form__note {
+
+    color: #777D82;
+
+    font-size: 0.7rem;
+
+    line-height: 1.6;
+
+    text-align: center;
+
+}
+
+
+/* ================================
+   ESTIMATE RESPONSIVE
+================================= */
+
+@media (max-width: 1000px) {
+
+    .estimate__heading {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+    .estimate__layout {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .estimate__heading h2 {
+
+        font-size: 3rem;
+
+        letter-spacing: -1.5px;
+
+    }
+
+    .estimate-form__row {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .estimate__form-wrapper {
+
+        padding: 28px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .estimate__heading h2 {
+
+        font-size: 2.6rem;
+
+    }
+
+    .estimate__form-wrapper {
+
+        padding: 22px;
+
+    }
+
+}
+
 
 /* ================================
    TESTIMONIALS RESPONSIVE
