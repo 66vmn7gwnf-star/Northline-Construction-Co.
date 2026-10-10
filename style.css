@@ -1417,6 +1417,289 @@ button {
 
 }
 
+/* ================================
+   TESTIMONIALS
+================================= */
+
+.testimonials {
+
+    background: var(--charcoal);
+
+    color: var(--white);
+
+}
+
+.testimonials__heading {
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: end;
+
+    gap: 80px;
+
+    margin-bottom: 70px;
+
+}
+
+.testimonials__heading .eyebrow {
+
+    color: var(--orange);
+
+}
+
+.testimonials__heading h2 {
+
+    max-width: 760px;
+
+    font-size: clamp(3rem, 6vw, 5.5rem);
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+
+}
+
+.testimonials__heading h2 span {
+
+    display: block;
+
+    color: var(--orange);
+
+}
+
+.testimonials__heading > p {
+
+    max-width: 430px;
+
+    color: #BFC3C6;
+
+    line-height: 1.8;
+
+}
+
+
+.testimonials__grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.testimonial-card {
+
+    position: relative;
+
+    min-height: 420px;
+
+    padding: 35px;
+
+    background: #1A1D20;
+
+    border: 1px solid #303438;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+.testimonial-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: var(--orange);
+
+}
+
+
+.testimonial-card__top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 55px;
+
+}
+
+.testimonial-card__top > span {
+
+    color: var(--orange);
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+.testimonial-card__stars {
+
+    color: var(--orange);
+
+    letter-spacing: 3px;
+
+    font-size: 0.85rem;
+
+}
+
+
+.testimonial-card__quote {
+
+    color: #E2E4E5;
+
+    font-size: 1.15rem;
+
+    line-height: 1.8;
+
+    max-width: 430px;
+
+}
+
+
+.testimonial-card__client {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: auto;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #303438;
+
+}
+
+
+.testimonial-card__initial {
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--orange);
+
+    color: var(--white);
+
+    font-weight: 800;
+
+    border-radius: 50%;
+
+}
+
+
+.testimonial-card__client h3 {
+
+    font-size: 0.95rem;
+
+    margin-bottom: 5px;
+
+}
+
+.testimonial-card__client span {
+
+    color: #858B90;
+
+    font-size: 0.75rem;
+
+}
+
+
+.testimonials__note {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 35px;
+
+    color: #777D82;
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* ================================
+   TESTIMONIALS RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+    .testimonials__heading {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+    .testimonials__grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .testimonial-card {
+
+        min-height: 360px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .testimonials__heading h2 {
+
+        font-size: 3rem;
+
+        letter-spacing: -1.5px;
+
+    }
+
+    .testimonial-card {
+
+        padding: 28px;
+
+    }
+
+    .testimonials__note {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+}
 
 /* =================================
    MOBILE MENU
@@ -1791,3 +2074,90 @@ button {
 
 }
 
+/* ================================
+   PROCESS RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+
+    .process__grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .process__intro {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .process__intro {
+
+        margin-bottom: 45px;
+
+    }
+
+    .process__intro h2 {
+
+        font-size: clamp(2.7rem, 12vw, 4rem);
+
+        letter-spacing: -1px;
+
+    }
+
+    .process__grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .process-card {
+
+        min-height: 300px;
+
+        padding: 30px;
+
+    }
+
+    .process-card h3 {
+
+        margin-top: 75px;
+
+        font-size: 1.45rem;
+
+    }
+
+    .process-card__icon {
+
+        top: 25px;
+
+        right: 25px;
+
+    }
+
+    .process__bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+}
