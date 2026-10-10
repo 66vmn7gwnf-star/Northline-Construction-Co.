@@ -1196,6 +1196,227 @@ button {
     font-weight: 700;
 }
 
+/* ================================
+   PROCESS
+================================ */
+
+.process {
+
+    background: var(--cream);
+
+}
+
+
+.process__intro {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    gap: 60px;
+
+    margin-bottom: 70px;
+
+}
+
+
+.process__intro h2 {
+
+    max-width: 780px;
+
+    margin-top: 18px;
+
+    font-size: clamp(3rem, 6vw, 5.2rem);
+
+    line-height: 0.98;
+
+    letter-spacing: -2px;
+
+}
+
+
+.process__intro h2 span {
+
+    color: var(--orange);
+
+}
+
+
+.process__intro > p {
+
+    max-width: 430px;
+
+    color: #6A6F73;
+
+    line-height: 1.8;
+
+}
+
+
+.process__grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #D4D0C7;
+
+    border-left: 1px solid #D4D0C7;
+
+}
+
+
+.process-card {
+
+    position: relative;
+
+    min-height: 380px;
+
+    padding: 38px;
+
+    border-right: 1px solid #D4D0C7;
+
+    border-bottom: 1px solid #D4D0C7;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+
+}
+
+
+.process-card:hover {
+
+    background: var(--charcoal);
+
+    color: var(--white);
+
+}
+
+
+.process-card__number {
+
+    color: var(--orange);
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.process-card__icon {
+
+    position: absolute;
+
+    top: 30px;
+
+    right: 30px;
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #C9C5BC;
+
+    font-size: 1.1rem;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+.process-card:hover .process-card__icon {
+
+    background: var(--orange);
+
+    border-color: var(--orange);
+
+    color: var(--white);
+
+}
+
+
+.process-card h3 {
+
+    margin-top: 95px;
+
+    font-size: 1.65rem;
+
+    line-height: 1.15;
+
+}
+
+
+.process-card p {
+
+    margin-top: 18px;
+
+    color: #6A6F73;
+
+    line-height: 1.8;
+
+}
+
+
+.process-card:hover p {
+
+    color: #BFC3C6;
+
+}
+
+
+.process__bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding-top: 28px;
+
+}
+
+
+.process__bottom p {
+
+    color: #6A6F73;
+
+    font-size: 0.7rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.process__bottom a {
+
+    color: var(--orange);
+
+    font-size: 0.8rem;
+
+    font-weight: 800;
+
+}
+
 
 /* =================================
    MOBILE MENU
